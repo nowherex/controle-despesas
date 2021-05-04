@@ -47,9 +47,9 @@ const updateBalaceValues = () => {
     .reduce((accumulator, value) => accumulator + value, 0)
     .toFixed(2);
 
-    balancePlus.textContent = income;
-    balanceMinus.textContent = expense;
-    balanceTotal.textContent = total;
+    balancePlus.textContent = `R$ ${income}`;
+    balanceMinus.textContent = `R$ ${expense}`;
+    balanceTotal.textContent = `R$ ${total}`;
 }
 
 const init = () => {
